@@ -1,0 +1,12 @@
+apiVersion: v1
+kind: Service
+metadata:
+  name: get-task-service
+spec:
+  type: ClusterIP
+  selector:
+    app: get-tasks
+  ports:
+    - protocol: TCP
+      port: 80  # service ka port jis par listen karega
+      targetPort: 8000  #container port
