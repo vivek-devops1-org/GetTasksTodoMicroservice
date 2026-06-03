@@ -15,6 +15,6 @@ spec:
     spec:
       containers:
       - name: get-tasks-container
-        image: todoacr001.azurecr.io/gettask:v7
+        image: todoacr001.azurecr.io/gettask:v8
         ports:
         - containerPort: 8000
